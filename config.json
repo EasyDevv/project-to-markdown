@@ -1,0 +1,33 @@
+﻿{
+  "exclude_types": [
+    "md",
+    "log",
+    "pyc",
+    "pyo",
+    "pyd",
+    "dll",
+    "so",
+    "exe",
+    "jpg",
+    "jpeg",
+    "png",
+    "gif",
+    "svg",
+    "webp",
+    "tiff",
+    "tif",
+    "psd"
+  ],
+  "exclude_folders": [
+    ".output-md",
+    "__pycache__",
+    ".venv",
+    ".gitignore",
+    "node_modules",
+    ".git",
+    "image",
+    "images"
+  ],
+  "output_folder": ".output-md",
+  "max_workers": 4
+}
