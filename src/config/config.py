@@ -37,8 +37,9 @@ class Config:
         ]
         self.exclude_folders = [
             ".output-md",
-            "__pycache__",
+            ".vscode",
             ".venv",
+            "__pycache__",
             ".gitignore",
             "node_modules",
             ".git",
