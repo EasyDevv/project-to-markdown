@@ -1,10 +1,13 @@
-# Project To Markdown
 
-<img src="./assets/icon.png" alt="project-to-markdown-logo" width="100"/>
+<p align="center">
+   <img src="./assets/icon.png" alt="project-to-markdown-logo" width="128"/>
+</p>
+
+# Project To Markdown
 
 **Project To Markdown** is a Python application that converts project files into structured markdown format, optimizing documentation for AI analysis. Designed to enhance the performance of advanced language models like **GPT and Claude**, it improves the efficiency of AI Retrieval-Augmented Generation (RAG) systems. 
 
-The tool offers both graphical and command-line interfaces, making it accessible to various users. By transforming content into an AI-friendly format, Project To Markdown enables AI assistants to provide more accurate and context-aware responses when queried about project details.
+The tool offers both GUI and CLI, making it accessible to various users. By transforming content into an AI-friendly format, Project To Markdown enables AI assistants to provide more accurate and context-aware responses when queried about project details.
 
 ## Demo
 

@@ -34,7 +34,7 @@ async def generate_tree_structure(files: List[Path], project_path: Path) -> str:
 
     content = []
 
-    content.append("# Project Project Structure")
+    content.append("# Project Structure")
     content.append(f"```\n{tree_str}\n```")
 
     return "\n".join(content)
