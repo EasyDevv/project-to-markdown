@@ -1,34 +1,34 @@
 ﻿{
-  "exclude_types": [
-    "md",
-    "log",
-    "pyc",
-    "pyo",
-    "pyd",
-    "dll",
-    "so",
-    "exe",
-    "jpg",
-    "jpeg",
-    "png",
-    "gif",
-    "svg",
-    "webp",
-    "tiff",
-    "tif",
-    "psd"
-  ],
-  "exclude_folders": [
-    ".output-md",
-    ".vscode",
-    ".venv",
-    "__pycache__",
-    ".gitignore",
-    "node_modules",
-    ".git",
-    "image",
-    "images"
-  ],
-  "output_folder": ".output-md",
-  "max_workers": 4
+    "exclude_types": [
+        "md",
+        "log",
+        "pyc",
+        "pyo",
+        "pyd",
+        "dll",
+        "so",
+        "exe",
+        "jpg",
+        "jpeg",
+        "png",
+        "gif",
+        "svg",
+        "webp",
+        "tiff",
+        "tif",
+        "psd"
+    ],
+    "exclude_folders": [
+        ".output-md",
+        ".vscode",
+        ".venv",
+        "__pycache__",
+        ".gitignore",
+        "node_modules",
+        ".git",
+        "image",
+        "images"
+    ],
+    "output_folder": ".output-md",
+    "max_workers": 4
 }

@@ -8,10 +8,13 @@ class Config:
     A class for managing application settings.
     """
 
-    def __init__(self, logger=logging.Logger, config_file: Path = Path("config.json")):
+    def __init__(
+        self, logger=logging.getLogger(), config_file: Path = Path("config.json")
+    ):
         """
         Initialize the Config class.
 
+        :param logger: Logger object
         :param config_file: Path to the configuration file
         """
         self.logger = logger
@@ -46,7 +49,6 @@ class Config:
             "image",
             "images",
         ]
-
         self.output_dir = ".output-md"
         self.max_workers = 4
 
@@ -54,7 +56,7 @@ class Config:
 
     def load_config(self):
         """
-        Load settings from the configuration file.
+        Load settings from the configuration file. If the file doesn't exist, create it with default values.
         """
         if self.config_file.exists():
             with self.config_file.open("r", encoding="utf-8-sig") as f:
@@ -65,7 +67,10 @@ class Config:
                 self.max_workers = data.get("max_workers", self.max_workers)
             self.logger.info("Configuration loaded successfully")
         else:
-            self.logger.warning("Configuration file not found, using default values")
+            self.logger.warning(
+                "Configuration file not found, creating with default values"
+            )
+            self.save_config()
 
     def save_config(self):
         """
@@ -80,5 +85,6 @@ class Config:
                     "max_workers": self.max_workers,
                 },
                 f,
+                indent=4,
             )
         self.logger.info("Configuration saved successfully")

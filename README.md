@@ -97,7 +97,7 @@ python main_cmd.py /path/to/your/project --onefile --timestamp
 
 The application uses a `config.json` file to store default settings. You can modify this file to change the default behavior:
 
-```json
+```
 {
   "exclude_types": ["md", "log", "pyc", ...],
   "exclude_folders": [".output-md", "__pycache__", ...],
